@@ -39,11 +39,15 @@ def christmas_tree(height):
     print((' ' * (height - 1)) + '<<Y>>')
     # print((' ' * (height - 1)) + 'mWm')
     # print((' ' * (height - 1)) + 'mWm')
-    # print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
-    print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
-    # print_frame(frame_width)
+    print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
+    print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
+    print_frame(frame_width)
+i = 1
 while True:
     christmas_tree(26)
-    sleep(0.5)
-    # os.system('cls')
+    sleep(0.1)
+    os.system('cls')
+    i = i + 1
+    if i > 200:
+        break
 1
