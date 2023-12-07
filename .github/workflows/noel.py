@@ -18,13 +18,13 @@ def christmas_tree(height):
     # print('\n')
     colors = ['\033[1;31m', '\033[33m', '\033[1;34m']
     color = random.choice(colors)
-    print(color, (' ' * 15) + 'Merry Christmas! 2023')
-    print(color, (' ' * 23) + 'NY <3')
+    print(color, (' ' * 6) + 'Merry Christmas! 2023')
+    print(color, (' ' * 13) + 'NY <3')
     color = random.choice(colors)
-    print(color, (' ' * 25) + '*')
-    print(color, (' ' * 20) + '*  *' + (' ' * 3 + '*  *'))
-    print(color, (' ' * 23) + '*   *')
-    print(color, (' ' * 21) + '*       *')
+    print(color, (' ' * 15) + '*')
+    print(color, (' ' * 10) + '*  *' + (' ' * 3 + '*  *'))
+    print(color, (' ' * 13) + '*   *')
+    print(color, (' ' * 11) + '*       *')
     for i in range(height):
         print(' ' * (height - i), end='')
         for j in range((2 * i) + 1):
@@ -36,18 +36,21 @@ def christmas_tree(height):
             print('*', end='')
         print()
     print((' ' * (height - 1)) + '<<T>>')
+    print((' ' * (height - 1)) + '<<<<3')
     print((' ' * (height - 1)) + '<<Y>>')
-    # print((' ' * (height - 1)) + 'mWm')
-    # print((' ' * (height - 1)) + 'mWm')
-    print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
-    print(color + (' ' * 16) + '$$$$$$$$$$$$$$$$$$$$$$$' + '\033[0m')
+    print(color + (' ' * 8) + '_$$$$$$$$$$$$$$$$$_' + '\033[0m')
+    print(color + (' ' * 8) + '_$$$$$$$$$$$$$$$$$_' + '\033[0m')
     print_frame(frame_width)
 i = 1
 while True:
-    christmas_tree(26)
+    christmas_tree(16)
     sleep(0.1)
-    os.system('cls')
+    os.system("cls")
     i = i + 1
-    if i > 200:
+    if i > 100:
         break
 1
+# for i in range(20):
+#     christmas_tree(26)
+#     sleep(0.5)
+#     os.system('cls')
